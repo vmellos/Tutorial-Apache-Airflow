@@ -12,7 +12,7 @@ COPY requirements.txt .
 COPY .env .
 
 RUN pip install --upgrade pip && pip install -r requirements.txt \
-    --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.2.5/constraints-3.6.txt \
+    --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.3.2/constraints-3.7.txt" \
     --no-warn-script-location
 
 RUN apt-get update \
